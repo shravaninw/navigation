@@ -31,7 +31,7 @@ class _AppRouteNavigator<T extends AppFlowController<Object>>
 class _AppRouteNavigatorState<T extends AppFlowController<Object>>
     extends State<_AppRouteNavigator<T>> {
   // ignore: always_specify_types
-  List<Page> _pages = [];
+  List<Page<Object>> _pages = [];
   bool _didPop = false;
 
   final List<Object> _history = <Object>[];

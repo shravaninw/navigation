@@ -34,4 +34,12 @@ class AppViewModel extends AppStateNotifier<AppState>
   void increment() {
     state = state.rebuild((AppStateBuilder b) => b.count = b.count! + 1);
   }
+
+  void setUseCase2Name(String name) {
+    state = state.rebuild((b) => b.usecase2Index = name);
+  }
+
+  void setDelay(bool loading) {
+    state = state.rebuild((b) => b..loading = loading);
+  }
 }

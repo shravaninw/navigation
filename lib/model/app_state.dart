@@ -9,6 +9,9 @@ abstract class AppState implements Built<AppState, AppStateBuilder> {
 
   AppState._();
 
+  String get usecase2Index;
+  bool get loading;
+
   Map<String, dynamic>? toJson() {
     return serializers.serializeWith(AppState.serializer, this)
         as Map<String, dynamic>?;
@@ -21,9 +24,11 @@ abstract class AppState implements Built<AppState, AppStateBuilder> {
   static Serializer<AppState> get serializer => _$appStateSerializer;
 
   static void _initializeBuilder(AppStateBuilder b) {
-    b.count = 0;
+    b
+      ..count = 0
+      ..usecase2Index = 'A'
+      ..loading = false;
   }
 
-  @nullable
   int? get count;
 }

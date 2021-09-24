@@ -10,5 +10,7 @@ extension ProviderUtils on BuildContext {
 }
 
 mixin AppProviderMixin<S extends StatefulWidget> on State<S> {
+  AppViewModel get appViewModel => context.appViewModel;
+
   AppState get appState => context.watch<AppState>();
 }
