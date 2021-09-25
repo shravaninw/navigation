@@ -7,7 +7,8 @@ class Usecase3Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Use Case 3')),
+        centerTitle: true,
+        title: Text('Use Case 3'),
         actions: [
           IconButton(
               icon: Icon(Icons.lock_open),

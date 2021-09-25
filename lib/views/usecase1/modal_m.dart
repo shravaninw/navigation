@@ -8,7 +8,8 @@ class ModalM extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Modal M')),
+        centerTitle: true,
+        title: Text('Modal M'),
         leading: IconButton(
           icon: Icon(Icons.close),
           onPressed: () {

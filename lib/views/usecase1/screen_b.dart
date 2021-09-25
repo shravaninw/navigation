@@ -6,7 +6,8 @@ class ScreenB extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Screen B')),
+        centerTitle: true,
+        title: Text('Screen B'),
       ),
       body: Center(child: Text('Screen B')),
       floatingActionButton: FloatingActionButtonn(n: 'C'),

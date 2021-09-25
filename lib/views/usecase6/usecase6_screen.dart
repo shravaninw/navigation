@@ -7,7 +7,8 @@ class Usecase6Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Use Case 6')),
+        centerTitle: true,
+        title: Text('Use Case 6'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {

@@ -20,6 +20,7 @@ class _ScreenDAState extends State<ScreenDA> with AppProviderMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text('Screen D'),
       ),
       floatingActionButton: FloatingActionButton(

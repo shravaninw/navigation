@@ -20,7 +20,7 @@ class _Usecase5ScreenState extends State<Usecase5Screen> with AppProviderMixin {
 
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Center(child: Text('Use Case 5'))),
+        appBar: AppBar(centerTitle: true, title: Text('Use Case 5')),
         body: appState.loading == true
             ? Center(child: Text('Loading Done.'))
             : Center(child: CircularProgressIndicator()));

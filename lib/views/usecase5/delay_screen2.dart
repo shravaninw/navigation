@@ -5,9 +5,8 @@ class DelayScreen2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: Text('Screen 2'),
-        ),
+        centerTitle: true,
+        title: Text('Screen 2'),
       ),
     );
   }

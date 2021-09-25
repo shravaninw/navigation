@@ -15,7 +15,8 @@ class _HomePageState extends State<HomePage> with AppProviderMixin<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Home Page')),
+        centerTitle: true,
+        title: Text('Home Page'),
       ),
       body: Center(
         child: Column(

@@ -68,7 +68,7 @@ class _Usecase2ScreenState extends State<Usecase2Screen> with AppProviderMixin {
         break;
     }
     return Scaffold(
-        appBar: AppBar(title: Center(child: Text('Use Case 2'))),
+        appBar: AppBar(centerTitle: true, title: Text('Use Case 2')),
         bottomNavigationBar: BottomNavigationBar(
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Screen A'),

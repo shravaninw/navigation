@@ -5,7 +5,8 @@ class ScreenD extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Screen D')),
+        centerTitle: true,
+        title: Text('Screen D'),
       ),
       body: Center(child: Text('Screen D')),
     );
